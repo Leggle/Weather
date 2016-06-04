@@ -12,6 +12,9 @@
 		03E1DA6B1D0207C000978E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E1DA691D0207C000978E88 /* Main.storyboard */; };
 		03E1DA6D1D0207C000978E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E1DA6C1D0207C000978E88 /* Assets.xcassets */; };
 		03E1DA701D0207C000978E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E1DA6E1D0207C000978E88 /* LaunchScreen.storyboard */; };
+		03E1DA7A1D020BDD00978E88 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03E1DA791D020BDD00978E88 /* CurrentWeather.plist */; };
+		03E1DA7F1D02487200978E88 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1DA7E1D02487200978E88 /* BackgroundView.swift */; };
+		03E1DA811D02497D00978E88 /* WeeklyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1DA801D02497D00978E88 /* WeeklyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		03E1DA6C1D0207C000978E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03E1DA6F1D0207C000978E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03E1DA711D0207C000978E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E1DA791D020BDD00978E88 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		03E1DA7E1D02487200978E88 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		03E1DA801D02497D00978E88 /* WeeklyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		03E1DA641D0207C000978E88 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				03E1DA7D1D02482C00978E88 /* ViewControllers */,
+				03E1DA7C1D02482600978E88 /* Models */,
+				03E1DA7B1D02481D00978E88 /* Views */,
 				03E1DA651D0207C000978E88 /* AppDelegate.swift */,
-				03E1DA671D0207C000978E88 /* ViewController.swift */,
-				03E1DA691D0207C000978E88 /* Main.storyboard */,
 				03E1DA6C1D0207C000978E88 /* Assets.xcassets */,
 				03E1DA6E1D0207C000978E88 /* LaunchScreen.storyboard */,
 				03E1DA711D0207C000978E88 /* Info.plist */,
+				03E1DA791D020BDD00978E88 /* CurrentWeather.plist */,
 			);
 			path = weather;
+			sourceTree = "<group>";
+		};
+		03E1DA7B1D02481D00978E88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03E1DA691D0207C000978E88 /* Main.storyboard */,
+				03E1DA7E1D02487200978E88 /* BackgroundView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		03E1DA7C1D02482600978E88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		03E1DA7D1D02482C00978E88 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03E1DA671D0207C000978E88 /* ViewController.swift */,
+				03E1DA801D02497D00978E88 /* WeeklyTableViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E1DA701D0207C000978E88 /* LaunchScreen.storyboard in Resources */,
+				03E1DA7A1D020BDD00978E88 /* CurrentWeather.plist in Resources */,
 				03E1DA6D1D0207C000978E88 /* Assets.xcassets in Resources */,
 				03E1DA6B1D0207C000978E88 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E1DA7F1D02487200978E88 /* BackgroundView.swift in Sources */,
 				03E1DA681D0207C000978E88 /* ViewController.swift in Sources */,
+				03E1DA811D02497D00978E88 /* WeeklyTableViewController.swift in Sources */,
 				03E1DA661D0207C000978E88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
